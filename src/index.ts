@@ -25,6 +25,12 @@ interface Params {
 //   return x.a + x.b
 // }
 
+type Add = (x: Params) =>  number
+
+// const add: Add = x => {
+//   add({a: 1, b: 2})
+// }
+
 const add = (a: number, b?: number) : number => {
   if(b) {
     return a + b
